@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sphibmvc.entities">
+	<class name="Employee" table="emp">
+		<id name="empno" type="int">
+			<column name="empid"/>
+			<generator class="increment"></generator>
+		</id>
+		<property name="empname" column="ename" ></property>
+		<property name="deptno" column="deptno"></property> 
+		<property name="job" column="job"></property>
+	<!-- 	
+		
+		<property name="hiredate" column="hireDate"></property>
+		<property name="deptno" column="deptno"></property> 
+    -->
+		
+	</class>
+</hibernate-mapping>

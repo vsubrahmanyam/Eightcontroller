@@ -1,0 +1,21 @@
+label.error {
+    color: #a62000;
+    font-weight: normal;
+    margin-top: 2px;
+    padding: 2px 8px 0 16px;
+}
+
+label.valid {
+    background: url(../images/valid.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 24px;
+    text-indent: -9999px;
+    width: 24px;
+}
+.validation {
+    color: #a62000;
+    font-weight: normal;
+    margin-top: 2px;
+    padding: 2px 8px 0 10px;
+    line-height: 39px
+}

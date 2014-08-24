@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sphibmvc.entities">
+	<class name="ScfUserInvestor" table="scf_user_startups">
+		<id name="scfustr_id" type="int">
+			<column name="scfustr_id" />
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="scfustr_id" type="string" />
+		<property name="scfustr_guid" type="string" />
+		<property name="scfustr_fname" type="string" />
+		<property name="scfustr_lname" type="string" />
+		<property name="scfustr_address" type="string" />
+		<property name="scfustr_website_url" type="string" />
+		<property name="scfustr_services_seeks" type="string" />
+		<property name="scfustr_phone" type="string" />
+		<property name="scfustr_email" type="string" />
+		<property name="scfustr_image" type="string" />
+		<property name="scfustr_is_raise_mny_from_platform" type="string" />
+		<property name="scfustr_is_hire_serviceprovider" type="string" />
+		<property name="scfustr_dst_id" type="string" />
+		<property name="scfustr_comp_name" type="string" />
+		<property name="scfustr_dc_id" type="string" />
+		<property name="scfustr_dtit_id" type="string" />
+		<property name="scfustr_dcty_id" type="string" />
+		<property name="scfustr_zip" type="string" />
+		<property name="scfustr_year_found" type="string" />
+		<property name="scfustr_di_id" type="string" />
+		<property name="scfustr_duls_id" type="string" />
+		<property name="scfustr_dubs_id" type="string" />
+		<property name="scfustr_emp_count" type="string" />
+		<property name="scfustr_preferred_contact" type="string" />
+		<property name="scfustr_desc" type="string" />
+		<property name="scfustr_one_liner" type="string" />
+		<property name="scfustr_capital_needed" type="string" />
+		<property name="scfustr_visibility" type="string" />
+		<property name="scfustr_rating" type="string" />
+		<property name="scfustr_pre_money" type="string" />
+		<property name="scfustr_risk" type="string" />
+		<property name="scfustr_collatera" type="string" />
+		<property name="scfustr_create_date" type="string" />
+		<property name="scfustr_last_update" type="string" />
+		
+		<property name="scfustr_scfu_id" type="string" />
+		<many-to-one name="scfUser" column="scfustr_scfu_id" class="ScfUser"></many-to-one>
+		<property name="scfustr_bd_preferred_contact" type="string" />
+		<property name="scfustr_cf_preferred_contact" type="string" />
+		
+
+	</class>
+</hibernate-mapping>

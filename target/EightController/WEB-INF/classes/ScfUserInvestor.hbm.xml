@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sphibmvc.entities">
+	<class name="ScfUserInvestor" table="scf_user_investors">
+		<id name="scfuinv_id" type="int">
+			<column name="scfuinv_id" />
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="scfuinv_guid" type="string" />
+		<property name="scfuinv_comp_name" type="string" />
+		<property name="scfuinv_dc_id" type="int" />
+		<property name="scfuinv_dtit_id" type="int" />
+		<property name="scfuinv_dcty_id" type="int" />
+		<property name="scfuinv_duit_id" type="int" />
+		<property name="scfuinv_dst_id" type="int" />
+		<property name="scfuinv_zip" type="string" />
+		<property name="scfuinv_duir_id" />
+		<property name="scfuinv_fund_type" />
+		<property name="scfuinv_intr_industries" />
+		<property name="scfuinv_intr_countries" />
+		<property name="scfuinv_preffered_contact" />
+		<property name="scfuinv_create_date" type="date" />
+		<property name="scfuinv_last_update" type="date" />
+
+		<property name="scfuinv_desc" type="string" />
+		<property name="scfuinv_min_duir_id" type="int" />
+		<property name="scfuinv_max_duir_id" type="int" />
+		<property name="scfuinv_one_liner" type="string" />
+		<property name="scfuinv_capital_needed" type="string" />
+		<property name="scfuinv_visibility" type="string" />
+		<property name="scfuinv_rating" type="string" />
+		<property name="scfuinv_pre_money" type="string" />
+		<property name="scfuinv_risk" type="string" />
+		<property name="scfuinv_collatera" type="string" />
+		<property name="scfuinv_verified" type="string" />
+		<property name="scfuinv_di_id" type="int" />
+		<property name="scfuinv_client_invest_countries" type="string" />
+		<property name="scfuinv_type_of_funding" type="string" />
+		<property name="scfuinv_type_of_access" type="string" />
+		<property name="scfuinv_acceptance_risk" type="string" />
+		<property name="scfuinv_investment_objective" type="string" />
+		<property name="scfuinv_est_net_worth" type="string" />
+		<property name="scfuinv_investment_experience" type="string" />
+		<property name="scfuinv_investment_amount_min" type="int" />
+		<property name="scfuinv_investment_amount_max" type="int" />
+		<property name="scfuinv_investment_time" type="int" />
+		<property name="scfuinv_general_investment_knowledge" type="string" />
+		<property name="scfuinv_relation_date_started" type="date" />
+		<property name="scfuinv_investment_product_knowledge" type="string" />
+		<property name="scfuinv_commission" type="string" />
+		<property name="scfuinv_addr" type="string" />
+		<property name="scfuinv_fname" type="string" />
+		<property name="scfuinv_lname" type="string" />
+		<property name="scfuinv_email" type="string" />
+		<property name="scfuinv_phone" type="string" />
+		<property name="scfuinv_site_url" type="string" />
+		<property name="scfuinv_logo" type="string" />
+		<property name="scfuinv_investor_type" type="int" />
+		<property name="scfuinv_client_invest_industries" type="int" />
+
+		 
+		<many-to-one name="scfUser" class="ScfUser" column="scfuinv_scfu_id"
+			unique="true" not-null="true" cascade="all" />
+		<!-- <one-to-one name="watchlistInv"
+			class="com.sphibmvc.entities.ScfUserWatchlistPortfolio" lazy="false"
+			constrained="false" fetch="join" property-ref="scfUserInvestor" /> -->
+		<!-- <many-to-one name="watchlistInv" class="ScfUserWatchlistPort" column="scfuport_scfuinv_id" 
+			unique="true" not-null="true" cascade="all" /> -->
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sphibmvc.entities">
+	<class name="ScfUser" table="scf_user">
+		<id name="scfu_id" type="int">
+			<column name="scfu_id"/>
+			<generator class="increment"></generator>
+		</id>
+		<property name="scfu_subscription_id" ></property>
+		<property name="scfu_guid" />
+		<property name="scfu_fname" /> 
+		<property name="scfu_lname" />
+		<property name="scfu_email" />
+		<property name="scfu_image" /> 
+		<property name="scfu_password" /> 
+		<property name="scfu_login_time" />
+		<property name="scfu_create_date" />
+		<property name="scfu_last_update" /> 
+		<property name="scfu_ut_id" /> 
+		<property name="scfu_token" />
+		<property name="scfu_status" /> 
+		<property name="scfu_social_domain" />
+		<property name="scfu_social_user_token" />
+		<property name="scfu_social_userid" /> 
+		<property name="scfu_subsciption_validity" />
+		<property name="scfuae_last_update" />
+		<property name="scfu_ref_id" /> 
+		<property name="scfu_optout" />
+	</class>
+</hibernate-mapping>

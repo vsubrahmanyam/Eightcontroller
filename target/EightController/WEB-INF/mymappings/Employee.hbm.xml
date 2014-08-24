@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping package="com.sphibmvc.entities">
+	<class name="Employee" table="emp">
+		<id name="empno" type="int">
+			<column name="empid"/>
+			<generator class="increment"></generator>
+		</id>
+		<property name="empname" column="ename"></property>
+		<property name="job" column="job"></property>
+		<property name="hiredate" column="hiredate"></property>
+		<property name="deptno" column="deptno"></property>
+	</class>
+</hibernate-mapping>
