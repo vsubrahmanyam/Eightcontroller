@@ -16,9 +16,11 @@ import com.sphibmvc.services.EmployeeService;
 
 //@Controller
 public class EmployeeController  {
-	
+
+	// EmployeeService Object : added as part of develop branch 
 	private EmployeeService employeeService;
 	
+	// getter method for EmployeeService Object : added as part of develop branch 
     public EmployeeService getEmployeeService() {
 		return employeeService;
 	}
